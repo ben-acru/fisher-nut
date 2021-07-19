@@ -7,15 +7,15 @@ R.C. Capital Management Group, LLC - RCCM
 Instructions:
 
 1. Login to Quickbooks file
-2. Download the 'Account Listing for Export' to the server desktop using the naming convention [Base Name]Account (Ex: FCIAccount)
-3. Download 'Transaction Detail for Export' to the server desktop using the naming convention [Base Name][File #] (Ex: FCI1)
-4. Select the downloaded files on the server desktop and copy to local computer\
-5. Go to https://bit.ly/3qB41Nt and login
-6. After logging in, navigate to qb_files folder by clicking on it
-7. Click 'upload' in the top right corner and choose which files to upload
-8. Files will appear with blue 'upload' button on the right side and click to import
-9. Click fisher-nut to go back to the home directory
-10. Open Fisher Nut QBE (fisher_nut_user) file
-11. Here there will be two segments for each file, click into the corresponding section for the account and run with "control + enter" on keyboard
-12. Repeat process for next section (transaction detail)
-13. Database will be refreshed
+2. Download 'Transaction Detail for Export' to the server desktop using the naming convention [Base Name][File #] (Ex: FCI1)
+	a. Files downloaded out of QuickBooks have a limit of 32,768 rows (and a header). This means when downloading the Transaction Detail report each individual file must contain less data than this.
+	b. These date ranges are kept track of in the script
+3. Go to https://bit.ly/3qB41Nt and login
+4. After logging in, navigate to qb_files folder by clicking on it
+5. Click 'upload' in the top right corner and choose which files to upload
+6. Files will appear with blue 'upload' button on the right side and click to import
+7. Click fisher-nut to go back to the home directory
+8. Open Fisher Nut QBE (fisher_nut_user) file
+9. Here there will be one segment for each file, click into the corresponding section for the account and run with "control + enter" on keyboard or hit Run button in menu bar
+10. Database will be refreshed
+11. Delete files off of server desktop and empty recycle bin
